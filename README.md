@@ -3,7 +3,7 @@
 
 ## Mục lục
 1. [Lý thuyết](#lythuyet)
-   - [Docker, docker-composer là gì](#docker-docker-compose-la-gi)
+   - [Docker và docker-composer là gì](#docker-va-docker-compose-la-gi)
    - [Linux vs Unix vs BSD hay *nix? macOS thuộc loại nào](#linux-vs-unix-vs-bsd-hay-nix-macos-thuoc-loai-nao)
    - [Alpine vs Ubuntu?](#alpine-vs-ubuntu)
    - [VNC](#vnc)
@@ -12,7 +12,7 @@
 ---
 
 ## Lý thuyết
-### Docker, docker-composer là gì
+### Docker và docker-composer là gì
  ![image](https://github.com/Dat-Quang-Truong/Docker/assets/113848415/be09cc2c-3dec-4ccf-b82c-649d2ede95ea)
 
    - Docker là một nền tảng để cung cấp cách để building, deploying và running ứng dụng dễ dàng nhanh chóng. Docker đóng gói phần mềm vào các đơn vị tiêu chuẩn hóa được gọi là container có mọi thứ mà phần mềm cần để chạy, trong đó có thư viện, công cụ hệ thống, mã và thời gian chạy. Bằng cách sử dụng Docker, bạn có thể nhanh chóng triển khai và thay đổi quy mô ứng dụng vào bất kỳ môi trường nào và biết chắc rằng mã của bạn sẽ chạy được.
