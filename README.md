@@ -2,7 +2,7 @@
 Bài tập tìm hiểu về Docker
 
 ## Mục lục
-   - [Docker và docker-composer là gì](#docker-va-docker-compose-la-gi)
+   - [Docker và docker-composer là gì](#docker-và-docker-composer-là-gì)
    - [Linux vs Unix vs BSD hay *nix? macOS thuộc loại nào](#linux-vs-unix-vs-bsd-hay-nix-macos-thuoc-loai-nao)
    - [Alpine vs Ubuntu?](#alpine-vs-ubuntu)
    - [VNC](#vnc)
