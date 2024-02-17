@@ -2,7 +2,7 @@
 - Bài tập tìm hiểu về Docker
 
 ## Mục lục
-1. [Lý thuyết](#ly-thuyet)
+1. [Lý thuyết](#lythuyet)
    - [Docker, docker-composer là gì](#docker-docker-compose-la-gi)
    - [Linux vs Unix vs BSD hay *nix? macOS thuộc loại nào](#linux-vs-unix-vs-bsd-hay-nix-macos-thuoc-loai-nao)
    - [Alpine vs Ubuntu?](#alpine-vs-ubuntu)
@@ -13,13 +13,21 @@
 
 ## Lý thuyết
 ### Docker, docker-composer là gì
+ ![image](https://github.com/Dat-Quang-Truong/Docker/assets/113848415/be09cc2c-3dec-4ccf-b82c-649d2ede95ea)
+
    - Docker là một nền tảng để cung cấp cách để building, deploying và running ứng dụng dễ dàng nhanh chóng. Docker đóng gói phần mềm vào các đơn vị tiêu chuẩn hóa được gọi là container có mọi thứ mà phần mềm cần để chạy, trong đó có thư viện, công cụ hệ thống, mã và thời gian chạy. Bằng cách sử dụng Docker, bạn có thể nhanh chóng triển khai và thay đổi quy mô ứng dụng vào bất kỳ môi trường nào và biết chắc rằng mã của bạn sẽ chạy được.
    - Các containers cho phép lập trình viên đóng gói một ứng dụng với tất cả các phần cần thiết, chẳng hạn như thư viện và các phụ thuộc khác, và gói tất cả ra dưới dạng một package.
+   - Lợi ích của docker: Không như máy ảo, Docker start và stop chỉ trong vài giây. Container có thể build và loại bỏ nhanh hơn máy ảo, dễ dàng thiết lập môi trường làm việc. Chỉ cần config 1 lần duy nhất và không bao giờ phải cài đặt lại các dependencies. Nếu thay đổi máy hoặc có người mới tham gia vào project thì chỉ cần lấy config đó và đưa cho họ.
    - Docker Compose là một công cụ hỗ trợ xác định và chạy các ứng dụng Docker multi-container. Nó giúp bạn quản lý nhiều container cùng một lúc trong các môi trường như sản xuất, staging, phát triển, thử nghiệm và CI. Với docker-composer có thể sử dụng file YAML để config các services cho ứng dụng. Sau đó dùng command để create và run từ những config đó.
-
+---
 ### Linux vs Unix vs BSD hay *nix? macOS thuộc loại nào
-   - Thảo luận về sự khác nhau giữa Linux, Unix, BSD và vấn đề về macOS
+Linux: Linux là hệ điều hành mã nguồn mở, được phát triển bởi Linus Torvalds. Nó sử dụng kernel Linux và GNU Tools để tạo thành một hệ điều hành hoàn chỉnh. GNU/Linux là kết hợp giữa các công cụ GNU và kernel Linux.
 
+Unix: Unix là hệ điều hành gốc, phát triển từ lâu và có nhiều phiên bản khác nhau. Unix là một hệ thống ổn định, đa người dùng, đa tác vụ cho máy chủ, máy tính để bàn và máy tính xách tay. Hệ điều hành Unix được tạo thành từ ba phần: Kernel, Shell và Program.
+
+BSD: BSD là hệ điều hành độc lập, có kernel riêng và userland riêng (không sử dụng kernel Linux hoặc GNU). BSD bao gồm các phiên bản như FreeBSD, OpenBSD và NetBSD.
+
+---
 ### Alpine vs Ubuntu?
 Alpine Linux và Ubuntu là hai hệ điều hành phổ biến trong việc xây dựng các container.
 Alpine Linux là một bản phân phối Linux nhẹ và tối giản, được thiết kế với sự bảo mật cao và hiệu quả về tài nguyên. Alpine Linux có một số điểm quan trọng:
@@ -34,17 +42,10 @@ Ubuntu là một hệ điều hành trên máy tính, và nó được phát tri
 - Có độ tùy biến cao, hỗ trợ nhiều môi trường GUI (Giao diện đồ họa người dùng).
 - Số lượng ứng dụng miễn phí nhiều với số lượng malware hay virus rất ít. Thế nên, việc bảo mật sẽ trở nên an toàn hơn.
 - Tốc độ vá lỗi về bảo mật thường nhanh hơn nhờ cộng đồng hỗ trợ lớn, phần lớn là lập trình viên.
----
-So sánh Alpine vs Ubuntu:  
-- Alpine là một hệ điều hành nhẹ và tối giản, được tạo ra đặc biệt cho việc sử dụng trong môi trường container.
-- Kích thước của base image Alpine nhỏ hơn so với Ubuntu, làm cho nó lý tưởng cho các môi trường container hạn chế tài nguyên.
-- Ưu điểm: Nhẹ nhàng, tối ưu cho việc sử dụng tài nguyên hiệu quả.
-- Nhược điểm: Có ít gói và công cụ tích hợp sẵn hơn.  
-- Ubuntu là một hệ điều hành phong phú với nhiều tính năng, cung cấp nhiều gói và công cụ sẵn có.
-- Kích thước của base image Ubuntu lớn hơn, nhưng nó cung cấp nhiều tính năng hơn.
-- Ưu điểm: Đa dạng, phù hợp cho nhiều trường hợp sử dụng.
-- Nhược điểm: Lớn hơn và có thể chứa nhiều thành phần không cần thiết.  
+
 Tóm lại, Alpine Linux thích hợp cho môi trường container hạn chế tài nguyên, trong khi Ubuntu phù hợp cho các trường hợp sử dụng đa dạng
+
+---
 
 ### VNC
 VNC, viết tắt của "Virtual Network Computing", là một hệ thống được sử dụng để chia sẻ màn hình giữa các thiết bị khác nhau với mục đích điều khiển từ xa. Điều này cho phép người dùng từ xa có thể xem và điều khiển màn hình, bàn phím và chuột của một máy tính khác như thể họ đang ngồi trước máy tính đó.
