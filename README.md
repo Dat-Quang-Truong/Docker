@@ -1,5 +1,5 @@
 # Docker
-Bài tập tìm hiểu về Docker
+Bài tập tìm hiểu về Docker.
 
 ## Mục lục
    - [Docker và docker-composer là gì](#docker-và-docker-composer-là-gì)
@@ -24,7 +24,7 @@ Unix: Unix là hệ điều hành gốc, phát triển từ lâu và có nhiều
 BSD: BSD là hệ điều hành nguồn mở tương tự Unix, có kernel riêng và userland riêng (không sử dụng kernel Linux hoặc GNU). BSD bao gồm các phiên bản như FreeBSD, OpenBSD và NetBSD.  
 *nix: *nix thường được sử dụng để đề cập đến họ các hệ điều hành có họ từ UNIX. Một số ví dụ bao gồm Linux, FreeBSD.
 
-MacOS thuộc loại Unix vì MacOS sử dụng nhân Darwin là sự kết hợp của Mach, BSD, XNU, ...; tất cả đều là dẫn xuất của UNIX gốc.
+MacOS thuộc loại Unix vì MacOS sử dụng nhân Darwin là sự kết hợp của Mach, BSD, XNU,... tất cả đều là dẫn xuất của UNIX gốc.
 
 ---
 ### Alpine vs Ubuntu?
@@ -41,7 +41,7 @@ Ubuntu là một hệ điều hành trên máy tính, và nó được phát tri
 - Số lượng ứng dụng miễn phí nhiều với số lượng malware hay virus rất ít. Thế nên, việc bảo mật sẽ trở nên an toàn hơn.
 - Tốc độ vá lỗi về bảo mật thường nhanh hơn nhờ cộng đồng hỗ trợ lớn, phần lớn là lập trình viên.
 
-Tóm lại, Alpine Linux thích hợp cho môi trường container hạn chế tài nguyên, trong khi Ubuntu phù hợp cho các trường hợp sử dụng đa dạng
+Tóm lại, Alpine Linux thích hợp cho môi trường container hạn chế tài nguyên, trong khi Ubuntu phù hợp cho các trường hợp sử dụng đa dạng.
 
 ---
 
