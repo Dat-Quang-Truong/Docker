@@ -11,8 +11,6 @@ Bài tập tìm hiểu về Docker.
 
 ## Lý thuyết
 ### Docker và docker-composer là gì
- ![image](https://github.com/Dat-Quang-Truong/Docker/assets/113848415/be09cc2c-3dec-4ccf-b82c-649d2ede95ea)
-
    - Docker là một nền tảng để cung cấp cách để building, deploying và running ứng dụng dễ dàng nhanh chóng. Docker đóng gói phần mềm vào các đơn vị tiêu chuẩn hóa được gọi là container có mọi thứ mà phần mềm cần để chạy, trong đó có thư viện, công cụ hệ thống, mã và thời gian chạy. Bằng cách sử dụng Docker, người dùng có thể nhanh chóng triển khai và thay đổi quy mô ứng dụng vào bất kỳ môi trường nào và biết chắc rằng mã của bạn sẽ chạy được.
    - Các containers cho phép lập trình viên đóng gói một ứng dụng với tất cả các phần cần thiết, chẳng hạn như thư viện và các phụ thuộc khác, và gói tất cả ra dưới dạng một package.
    - Lợi ích của docker: Không như máy ảo, Docker start và stop chỉ trong vài giây. Container có thể build và loại bỏ nhanh hơn máy ảo, dễ dàng thiết lập môi trường làm việc. Chỉ cần config 1 lần duy nhất và không bao giờ phải cài đặt lại các dependencies. Nếu thay đổi máy hoặc có người mới tham gia vào project thì chỉ cần lấy config đó và đưa cho họ.
