@@ -48,8 +48,6 @@ Tóm lại, Alpine Linux thích hợp cho môi trường container hạn chế t
 ### VNC
 VNC, viết tắt của "Virtual Network Computing", là một hệ thống được sử dụng để chia sẻ màn hình giữa các thiết bị khác nhau với mục đích điều khiển từ xa. Điều này cho phép người dùng từ xa có thể xem và điều khiển màn hình, bàn phím và chuột của một máy tính khác như thể họ đang ngồi trước máy tính đó. VNC hoạt động dựa trên mô hình client/server. Máy tính cần được cài đặt thành một máy chủ VNC, trong khi máy tính khác muốn điều khiển từ xa cần cài đặt một trình xem VNC, hoặc còn gọi là client. Khi hai thành phần này được kết nối, máy chủ VNC sẽ chuyển gửi hình ảnh màn hình từ xa đến trình xem VNC.
 
-![image](https://github.com/Dat-Quang-Truong/Docker/assets/113848415/4c1c1b3c-57f2-4326-bbe1-b720be21af68)
-
 VNC có các tính năng nổi bật:
 - Giao thức đơn giản: VNC sử dụng giao thức RFB (remote framebuffer) đơn giản và mạnh mẽ. Vì VNC không sử dụng nhiều tài nguyên như CPU và bộ nhớ, nên nó có thể chạy trên phần cứng có công suất thấp.
 - Hoạt động độc lập: Giao thức RFB không cần biết rõ về hệ điều hành mà nó đang chạy mà chỉ cần gửi dữ liệu chuột và bàn phím từ máy người dùng đến máy từ xa và gửi dữ liệu hình ảnh từ máy từ xa đến máy người dùng nên việc viết phần mềm VNC cho máy từ xa và máy người dùng trên các hệ điều hành mới là khá dễ dàng.
